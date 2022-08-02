@@ -5,31 +5,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    h1 {
-        @apply font-medium text-[4rem] leading-[4.7rem] text-center text-very-dark-desaturated-violet w-full;
-    }
-
-    p {
-        @apply text-center text-dark-grayish-violet font-normal leading-[2.8rem] text-[1.6rem];
-    }
-}
-
 @layer components {
     .gradient-bg {
         @apply fixed bg-gradient-to-bl from-light-magenta to-light-violet w-[51rem] h-[101.8rem] rounded-[25.5rem] -z-10;
-    }
-
-    .chat-app {
-        /* background: #FFFFFF;
-        box-shadow: 0px 30px 60px -10px rgba(62, 39, 83, 0.251202);
-        border-radius: 30px; */
-    }
-
-    .chat-app--header {
-        /* background: linear-gradient(225deg, #E844FF 0%, #8739FF 100%); */
-        /* box-shadow: 0px 0px 13px rgba(62, 39, 83, 0.251202);
-        border-radius: 20px 20px 6px 6px; */
     }
 
     .chat-app--text-left {
@@ -44,15 +22,18 @@
         border-radius: 10px 10px 4px 10px;
     }
 
+    .chat-app--imgs-right--img {
+        @apply w-40r rounded-[1rem];
+        box-shadow: 0px 10px 5px -5px rgba(62, 39, 83, 0.045318);
+    }
+
     .chat-app--text-right-block, .chat-app--text-left-block {
         @apply mb-16r;
     }
  
     .chat-app--rate {
         @apply bg-gradient-to-bl from-light-magenta to-light-violet text-white gap-x-8r max-w-[16rem];
-        /* background: linear-gradient(225deg, #E844FF 0%, #8739FF 100%); */
         box-shadow: 0px 10px 5px -5px rgba(62, 39, 83, 0.045318);
-        /* border-radius: 10px 10px 4px 10px; */
     }
 
     .chat-app--rate-oval {
@@ -61,13 +42,5 @@
 
     .chat-app--rate-price {
         @apply text-[1.1rem] leading-[1.2rem] font-bold ml-auto;
-    }
-}
-
-@layer utilities {
-    .chat-app--imgs-right--img {
-        box-shadow: 0px 10px 5px -5px rgba(62, 39, 83, 0.045318);
-        border-radius: 10px;
-        width: 40px;
     }
 }
